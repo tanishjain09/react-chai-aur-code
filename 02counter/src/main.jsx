@@ -5,6 +5,8 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <h1>Two Different counter button</h1>
+    <App name="counter1"/>
+    <App name="counter2"/>
   </StrictMode>,
 )

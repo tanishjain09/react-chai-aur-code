@@ -1,9 +1,9 @@
 import { useState } from 'react' //useState is hook
 import './App.css'
 
-function App() { 
+function App(props) { 
 
-  const [counter, setCounter] = useState(0) //counter is variable and setCounter is a function resonsible for update in variable
+  const  [counter, setCounter] = useState(0) //counter is variable and setCounter is a function resonsible for update in variable
 
   // let counter = 256;
 
@@ -23,7 +23,7 @@ function App() {
   }
   return (
     <>
-      <h1>Chai aur react</h1>
+      <h1>{props.name}</h1>
       <h2>Counter value: {counter}</h2>
       <button
       onClick={addValue}
@@ -34,7 +34,6 @@ function App() {
       onClick={decreaseValue}
       disabled = {counter <= 0}
       >Decrease value</button>
-      
     </>
   )
 }
