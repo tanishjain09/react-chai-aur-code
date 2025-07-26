@@ -1,6 +1,4 @@
 import { useState } from 'react' //useState is hook
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() { 
@@ -11,8 +9,7 @@ function App() {
 
   const addValue = () => {
       if(counter < 20){
-      counter += 1;
-      setCounter(counter);
+      setCounter(counter + 1);
 
       // write about  hooks in notes
     }
