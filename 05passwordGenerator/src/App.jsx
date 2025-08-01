@@ -39,7 +39,7 @@ function App() {
 
   useEffect(() => { //page load hone par ye log hoga, it has more control over when the function is called
     passwordGenerator()
-  }, [length, numberAllowed, charAllowed, passwordGenerator]) //kuch bhi change ho to passwordGenerator function ko call karega
+  }, [length, numberAllowed, charAllowed]) //kuch bhi change ho to passwordGenerator function ko call karega 
   return (
     
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
