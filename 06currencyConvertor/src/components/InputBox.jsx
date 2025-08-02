@@ -18,7 +18,7 @@ function InputBox({
   const amountInputId = useId(); //generate a unique id for the amount input field
 
   return (
-    <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
+    <div className={`bg-white p-3 rounde d-lg text-sm flex ${className}`}>
       <div className="w-1/2">
         <label htmlFor={amountInputId} 
           className="text-black/40 mb-2 inline-block">
@@ -36,7 +36,7 @@ function InputBox({
           }
           //event fire when the input value changes and the call the onAmountChange function with the new value
           //the first amountChange is given as to check the the fucntion contain something or not 
-          // and second actually change the value using this becox if the amountChange is empty it could creash the website
+          // and second actually change the value using this becox if the amountChange is empty it could crash the website
         />
       </div>
       <div className="w-1/2 flex flex-wrap justify-end text-right">
